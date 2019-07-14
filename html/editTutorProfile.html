@@ -1,0 +1,35 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../css/tutorSetting.css">
+</head>
+<body>
+<div class="editTutorContainer">
+    <div class="title_container"><h1 id="edit-profile-title">Edit profile</h1></div>
+    <table align="center" class="editTutorTable">
+        <tr>
+            <td>ID</td>
+            <td><input disabled id="teacher_id" class="teacher_info" placeholder="teacher id"></td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" id="teacher_name" class="teacher_info" placeholder="Name"></td>
+        </tr>
+        <tr>
+            <td>Gmail</td>
+            <td><input id="teacher_gmail" class="teacher_info" > </td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input id="teacher_password" class="teacher_info"> </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button class="saveBt" onclick=saveTutorProfileInfo()>Save</button></td>
+        </tr>
+
+    </table>
+
+</div>
+</body>
+<script src="../javascript/initTutorProfile.js"></script>
+</html>

@@ -1,0 +1,61 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../css/editSchedule.css">
+</head>
+<body>
+<h1 class="title">SCHEDULES</h1>
+<div class="editScheduleContainer">
+    <table class="editScheduleTable" id="schedule_table">
+        <tr>
+            <th>SCHEDULE NO</th>
+            <th>SUBJECT NAME</th>
+            <th>DAY</th>
+            <th>TIME</th>
+            <th></th>
+        </tr>
+
+
+    </table>
+    <div id="pagingNum">Page</div>
+
+    <!-- The Modal -->
+    <div id="myScheduleModal" class="scheduleModal">
+
+        <!-- Modal content -->
+        <div class="schedule-modal-content">
+            <div class="schedule-modal-header">
+                <span class="close">&times;</span>
+                <h2>Modal Header</h2>
+            </div>
+            <div class="schedule-modal-body">
+                <table id="schedule-edit-table">
+                    <tr>
+                        <td>Schedule No</td>
+                        <td><input id="schedule-input" disabled></td>
+                    </tr>
+                    <tr>
+                        <td>Subject Name</td>
+                        <td><select id="subject-select"></select></td>
+                    </tr>
+                    <tr>
+                        <td>Week Day</td>
+                        <td><select id="weekday-select"></select></td>
+                    </tr>
+                    <tr>
+                        <td>Sections</td>
+                        <td><select id="section-select"></select></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="schedule-modal-footer">
+<!--                <h3>Modal Footer</h3>-->
+                <button id="saveModalBt" onclick="saveModal()">Save</button>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+</body>
+<script src="../javascript/schedule.js"></script>
+</html>

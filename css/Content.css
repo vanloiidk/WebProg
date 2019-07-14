@@ -1,0 +1,15 @@
+body{
+    /*display: table-cell;*/
+}
+#content{
+    /*z-index: 1;*/
+    position: fixed;
+    padding-top: 0;
+    left:200px;
+    top: 45px;
+    height: calc(100% - 45px);
+    width: calc(100% - 200px);
+    background-color: #f2f2f2;
+    /*overflow-x: hidden;*/
+
+}

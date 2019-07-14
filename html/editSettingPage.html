@@ -1,0 +1,47 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../css/classSetting.css">
+</head>
+<body>
+
+<div class="editClassContainer">
+    <div class="title_container"><h1 id="class_id" class="class_info"></h1></div>
+    <table align="center" class="editClassTable">
+        <tr>
+            <td>Class name</td>
+            <td><input type="text" id="class_name" class="class_info" placeholder="Class Name"></td>
+        </tr>
+        <tr>
+            <td>Year of admission</td>
+            <td><input type="text" id="class_year" class="class_info" placeholder="Year of admission"></td>
+        </tr>
+        <tr>
+            <td>Branch</td>
+            <td><select id="branch_id" class="class_info"></select></td>
+        </tr>
+        <tr>
+            <td>Semester</td>
+            <td><select id="semester_id" class="class_info"></select> </td>
+        </tr>
+        <tr>
+            <td>Min.Attendance %</td>
+            <td><input type="text" id="attendance" placeholder="Min.Attendance"></td>
+        </tr>
+        <tr>
+            <td>Total Strength</td>
+            <td><input type="text" id="class_strength" class="class_info" placeholder="Total Strength"></td>
+        </tr>
+        <tr>
+            <td>Security pass code</td>
+            <td><input type="text" id="class_code" class="class_info" placeholder="Security pass code"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button class="saveBt" onclick=saveClassInfo()>Save</button></td>
+        </tr>
+    </table>
+
+</div>
+</body>
+<script src="../javascript/initClassSetting.js"></script>
+</html>

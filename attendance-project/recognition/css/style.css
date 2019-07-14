@@ -1,0 +1,147 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+
+.container {
+	padding: 0;
+}
+
+.container h1 {
+	text-align: center;
+	color: #003171;
+}
+
+.border {
+	width: 100px;
+	height: 10px;
+	background: #003171;
+	margin: 40px auto;
+}
+
+#status {
+	width: 640px;
+	height: 40px;
+	color: green;
+	border: 2px solid green;
+	margin: 40px auto;
+}
+
+#message {
+	text-align: center;
+	color: green;
+	margin-top: 10px;
+}
+
+.title {
+	width: 100%;
+	height: 80px;
+	background-color: #875F9A;
+	text-align: center;
+	display: table;
+}
+
+.title h2 {
+	color: #fff;
+	padding: 20px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.user {
+	top: 20px;
+	right: 30px;
+	/*position: fixed;*/
+	display: flex;
+	color: white;
+	font-weight: bold;
+	float: right;
+	position: absolute;
+}
+
+.user img {
+	margin-left: 10px;
+	margin-top: 10px;
+	transition: transform .2s;
+	width: 30px; 
+	height: 30px;
+}
+
+.user img:hover {
+	transform: scale(1.5);
+}
+
+#camera-wrapper {
+	margin: 0 auto;
+	display: flex;
+}
+
+#camera {
+	width: 640px;
+	height: 480px;
+	margin: 0 auto;
+	background: gray;
+	position: relative;
+	border: 1px solid blue;
+}
+
+.message p {
+	position: absolute; 
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto; 
+	width: 370px; /* Need a specific value to work */
+}
+
+#my-camera {
+	position: absolute; 
+    z-index: 1;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.control {
+	margin: 20px auto;
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+}
+
+#take-photo, #snap, #submit, #login, #try-again {
+	border: 0;
+	background: none;
+	text-align: center;
+	border: 2px solid #2ecc71;
+	padding: 10px 20px;
+	outline: none;
+	color: black;
+	cursor: pointer;
+	transition: 0.25s;
+	margin: 0 5px;
+}
+
+#login {
+	color: white;
+	font-weight: bold;
+}
+
+#submit {
+	border: 2px solid red;
+}
+
+#take-photo:hover, #snap:hover, #login:hover, #try-again:hover {
+	background: #2ecc71;
+}
+
+#delete:hover {
+	background: red;
+}
+
+#image {
+	margin-left: 10px;
+	border: 1px solid blue;
+}
+

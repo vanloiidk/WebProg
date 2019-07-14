@@ -1,0 +1,242 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../css/addSchedule.css">
+</head>
+<body>
+<div class="add-schedule-container"><h1 id="addScheduleTitle">add new schedule</h1></div>
+<div class="addNewScheduleContainer">
+
+    <div id="Schedule-container">
+        <table id="schedule-table">
+            <tr>
+                <th></th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+
+            </tr>
+            <tr>
+                <td class="section" rowspan="5">Morning</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>            </tr>
+            <tr>
+                <td class="section" rowspan="5">Afternoon</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>            </tr>
+            <tr>
+                <td class="section" rowspan="5">Evening</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>            </tr>
+
+        </table>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myScheduleModal" class="scheduleModal">
+
+        <!-- Modal content -->
+        <div class="schedule-modal-content">
+            <div class="schedule-modal-header">
+                <span class="close">&times;</span>
+                <h2>Modal Header</h2>
+            </div>
+            <div class="schedule-modal-body">
+                <table id="schedule-edit-table">
+                    <tr>
+                        <td>Schedule No</td>
+                        <td><input id="schedule-input" disabled></td>
+                    </tr>
+                    <tr>
+                        <td>Subject Name</td>
+                        <td><select id="subject-select"></select></td>
+                    </tr>
+                    <tr>
+                        <td>Week Day</td>
+                        <td><input id="weekday-input" disabled></input></td>
+                    </tr>
+                    <tr>
+                        <td>Sections</td>
+                        <td><input id="section-input" disabled></input></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="schedule-modal-footer">
+                <!--                <h3>Modal Footer</h3>-->
+                <button id="saveModalBt" onclick="saveModal()">Save</button>
+                <button id="deleteModalBt">Delete</button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- The Modal -->
+    <div id="myAddScheduleModal" class="addScheduleModal">
+
+        <!-- Modal content -->
+        <div class="add-schedule-modal-content">
+            <div class="add-schedule-modal-header">
+                <span class="addClose">&times;</span>
+                <h2>Modal Header</h2>
+            </div>
+            <div class="add-schedule-modal-body">
+                <table id="add-schedule-edit-table">
+                    <tr>
+                        <td>Schedule No</td>
+                        <td><input id="add-schedule-input" disabled></td>
+                    </tr>
+                    <tr>
+                        <td>Subject Name</td>
+                        <td><select id="add-subject-select"></select></td>
+                    </tr>
+                    <tr>
+                        <td>Week Day</td>
+                        <td><input id="add-weekday-input" disabled></input></td>
+                    </tr>
+                    <tr>
+                        <td>Sections</td>
+                        <td><input id="add-section-input" disabled></input></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="add-schedule-modal-footer">
+                <!--                <h3>Modal Footer</h3>-->
+                <button id="saveAddModalBt" onclick="createSchedule()">Save</button>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+<script src="../javascript/schedules.js"></script>
+<script src="../javascript/checkAuthorization.js"></script>
+</html>

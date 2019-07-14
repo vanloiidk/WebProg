@@ -1,0 +1,93 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Page</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/Content.css">
+    <link rel="stylesheet" href="../css/header.css">
+
+</head>
+<body onhashchange=getMaincontent()>
+
+    <div id="wrapper">
+
+        <div class="user">
+            <span id="greeting"></span>
+            <a href="#" id="logout" style="display: none;">Log out</a>
+
+        </div>
+        <div class="overlay"></div>
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">Main Navigation</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Manage Class <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li class="dropdown-header">Menu</li>
+                        <a href="#dashboard"><li>Dashboard</li></a>
+                        <a href="#edit-setting"><li>Edit Settings</li></a>
+                        <a href="#edit-tutor-profile"><li>Edit Tutor Profile</li></a>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Manage Student <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li class="dropdown-header">Menu</li>
+                        <a href="#create-new-student"><li>Create New Student</li></a>
+                        <a href="#add-new-student"><li>Add New Student</li></a>
+                        <a href="#edit-student"><li>View/Edit Student</li></a>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Manage Schedule <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li class="dropdown-header">Menu</li>
+                        <a href="#add-schedule"><li>Add New Schedule</li></a>
+                        <a href="#edit-schedule"><li>View/Edit Schedule</li></a>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Miscellaneous <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li class="dropdown-header">Menu</li>
+                        <a href="#help"><li>Help</li></a>
+                        <a href="#about"><li>About</li></a>
+                    </ul>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <iframe id="content" src="editSettingPage.html"></iframe>
+        
+    </div>
+
+</body>
+</html>
+<script src="../javascript/Dropdown_sidebar.js"></script>
+<script src="../javascript/changeMainconten.js"></script>
+<!-- <script src="../javascript/checkAuthorization.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+

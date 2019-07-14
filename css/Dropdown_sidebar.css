@@ -1,0 +1,83 @@
+/*Fixed sidenav, full height*/
+.sidenav{
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 45px;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+
+}
+.sidenav a:hover, button:hover{
+    background-color: #262650;
+}
+/*Styled the sidebar links and the dropdown button*/
+.sidenav a, .dropdown-bth{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align:left;
+    cursor: pointer;
+    outline: none;
+
+}
+
+
+.sidenav p{
+    background-color: #818181;
+    padding: 6px 10px;
+}
+
+
+/*On mouse-over*/
+.main{
+    margin-left: 200px;/*Same as the width of the sidebar*/
+    font-size: 20px;/*Increased text to anable scrolling*/
+    padding: 0px 10px;
+}
+
+/*Dropdown container (hidden by default).
+Optional: add a lighter background color and some left padding to change the design of the dropdown content*/
+
+.dropdown-container{
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+    transition: all 2s;
+}
+/*.dropdown-bth:hover+.dropdown-container{*/
+/*    height: 100px;*/
+/*    transition: height 2s;*/
+/*}*/
+.sibling{
+    position: relative;
+    height: 100%;
+}
+
+/*Optional: Style the caret down icon*/
+.fa-caret-down{
+    float: right;
+    padding-right: 8px;
+}
+.searchForm{
+
+}
+
+.searchip{
+    padding: 1px 1px !important;
+    font-size: 10px;
+    width: 70%; !important;
+
+}
+.searchbt{
+    padding: 1px 1px !important;
+    font-size: 10px;
+}

@@ -1,0 +1,30 @@
+.title_container{
+    display: table;
+    text-align: center;
+    margin: 0 auto;
+    width: 95%;
+    height: 60px;
+    background: #875F9A;
+}
+#add-student-title{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    width: 200px;
+    color: white;
+    margin: auto auto;
+}
+#addStudentTableContainer{
+    display: flex;
+    margin: 20px auto;
+}
+#addNewStudentTable{
+    display: flex;
+    margin: 0 auto;
+}
+.searchInput{
+    margin: 5px 5px;
+}
+#addNewStudentTable th:last-child{
+    width: 100px;
+}

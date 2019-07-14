@@ -1,0 +1,59 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../css/editStudents.css">
+</head>
+<body>
+<div class="title-container"><h1 id="edit-student-title" class="title">STUDENTS</h1></div>
+<div class="editStudentContainer">
+    <table class="editStudentTable" id="student_table">
+        <tr>
+            <th>ROLL NO</th>
+            <th>FIRST NAME</th>
+            <th>LAST NAME</th>
+            <th>ABSENT</th>
+            <th>PERCENTAGE</th>
+            <th>EMAIL</th>
+            <th></th>
+        </tr>
+
+
+    </table>
+</div>
+
+<!-- The Modal -->
+<div id="myStudentModal" class="studentModal">
+
+    <!-- Modal content -->
+    <div class="student-modal-content">
+        <div class="student-modal-header">
+            <span class="close">&times;</span>
+            <h2>Modal Header</h2>
+        </div>
+        <div class="student-modal-body">
+            <table id="student-edit-table">
+                <tr>
+                    <td>Roll No</td>
+                    <td><input id="studentId-input" disabled></td>
+                    <td rowspan="3" id="modal-IMG-container">IMG</td>
+                </tr>
+                <tr>
+                    <td>Student Name</td>
+                    <td><input id="studentName-input"></input></td>
+                </tr>
+                <tr>
+                    <td>Student Email</td>
+                    <td><input id="studentGmail-input"></input></td>
+                </tr>
+
+            </table>
+        </div>
+        <div class="student-modal-footer">
+            <!--                <h3>Modal Footer</h3>-->
+            <button id="saveStudentModalBt" onclick="saveStudentModal()">Save</button>
+        </div>
+    </div>
+
+</div>
+</body>
+<script src="../javascript/students.js"></script>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Recognition</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.25/webcam.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="title">
+			<h2>Attendance Monitoring System</h2>
+		</div>
+
+		<div class="user">
+			<button id="login" style="display: none;" onclick="location.href = '../login/login_page.html';">Login</button>
+			<p id="username"></p>
+			<img id="icon" src="images/logout-icon.png" alt="" style="display: none;">
+		</div>
+		
+		<h1 >Recognition</h1>
+		<div class="border"></div>
+
+		<div id="status" style="display: none;"> 
+			<p id="message"></p>
+		</div>
+		
+		<div id = "camera-wrapper">
+			<div id="camera">
+				<div class="message">
+					<p>When ready, start taking photos to recognize</p>
+				</div>
+
+				<div id="my-camera">
+					<!-- <video id="video"></video> -->
+				</div>
+			</div>
+			<div id="image-snap">
+				<img id="image" />
+			</div>
+
+			<div id="result">
+				<img id="image-result" />
+			</div>
+		</div>
+
+		<div class="control">
+			<button id="take-photo">Take photo</button>
+			<button id="snap" style="display: none;">Capture</button>
+			<button id="submit" style="display: none;">Submit</button>
+			<button id="try-again" style="display: none;">Try again</button>
+		</div>
+		
+	</div>
+</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/recognize.js"></script>
+</html>

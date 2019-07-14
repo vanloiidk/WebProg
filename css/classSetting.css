@@ -1,0 +1,51 @@
+.classSettingTable tr,td{
+    width: 50%;
+    /*border: 1px solid green;*/
+    text-align: right;
+    padding: 10px 10px;
+}
+#branch_id,#semester_id{
+
+    width: 100%;
+
+}
+h1{
+
+    text-align: center;
+
+}
+.saveBt{
+    display: flex;
+    margin: 0 auto;
+}
+
+body{
+    background-color: lightgray;
+}
+.editClassContainer{
+    position: fixed;
+    left: 0;
+    right: 0;
+
+}
+.classSettingTable{
+
+
+}
+
+.title_container{
+    display: table;
+    text-align: center;
+    margin: 0 auto;
+    width: 95%;
+    height: 60px;
+    background: #875F9A;
+}
+#class_id{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    width: 200px;
+    color: white;
+    margin: auto auto;
+}
