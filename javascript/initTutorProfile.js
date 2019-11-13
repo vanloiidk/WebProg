@@ -35,7 +35,7 @@ function init() {
 
         }
     };
-    request.open('GET',`../php/teacher/teacher_readOne.php?teacher_id=${myteacher_id}`,true);
+    request.open('GET',`http://localhost:3001/php/teacher/teacher_readOne.php?teacher_id=${myteacher_id}`,true);
     request.send();
 }
 
@@ -65,6 +65,6 @@ function postNewData(jsonData,teacher_id) {
         }
 
     }
-    request.open("POST", `../php/teacher/teacher_update.php?teacher_id=${teacher_id}`, true);
+    request.open("POST", `http://localhost:3001/php/teacher/teacher_update.php?teacher_id=${teacher_id}`, true);
     request.send(jsonData);
 }

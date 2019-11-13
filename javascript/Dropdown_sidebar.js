@@ -12,7 +12,7 @@ function logout2() {
     document.cookie = "id=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
     document.cookie = "class_id=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 
-    window.location.href = "../attendance-project/login/login_page.html";
+    window.location.href = "http://localhost:3001/attendance-project/login/login_page.html";
 }
 
 function getCookie2(cname) {
@@ -35,9 +35,9 @@ function getCookie2(cname) {
 function checkCookie2() {
   let user = getCookie2("myUser");
   if(user == "student") {
-    window.location.href = "../attendance-project/recognition/recognition_page.html";
+    window.location.href = "http://localhost:3001/attendance-project/recognition/recognition_page.html";
   } else if(user == ""){
-    window.location.href = "../attendance-project/login/login_page.html";
+    window.location.href = "http://localhost:3001/attendance-project/login/login_page.html";
   }
 
   if(user == "teacher") {

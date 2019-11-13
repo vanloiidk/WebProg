@@ -8,7 +8,7 @@
         //attributes
         public $branch_id;
         public $branch_name;
-        public $branch_des;
+        public $branch_des; 
 
         public function __construct($db)
         {

@@ -40,7 +40,7 @@ function Search() {
 
 
 
-    request.open('POST','../php/students/student_searchWithoutClass.php');
+    request.open('POST','http://localhost:3001/php/students/student_searchWithoutClass.php');
     request.send(jsondata);
 }
 
@@ -127,7 +127,7 @@ function addClass(student_id) {
 
     let jsondata = JSON.stringify(obj);
 
-    request.open("POST",'../php/students/student_addClass.php',true);
+    request.open("POST",'http://localhost:3001/php/students/student_addClass.php',true);
     request.send(jsondata);
 }
 

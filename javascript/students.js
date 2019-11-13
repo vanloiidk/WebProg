@@ -78,7 +78,7 @@ function getData() {
         }
     }
 
-    request.open("GET",`../php/students/student_readWithClass.php?class_id=${class_id}`,true);
+    request.open("GET",`http://localhost:3001/php/students/student_readWithClass.php?class_id=${class_id}`,true);
     request.send();
 }
 function getabsent() {
@@ -109,7 +109,7 @@ function deleteStudent(student_id) {
 
         }
     }
-    request.open("GET",`../php/students/student_moveOneFromClass.php?student_id=${student_id}`);
+    request.open("GET",`http://localhost:3001/php/students/student_moveOneFromClass.php?student_id=${student_id}`);
     request.send();
 }
 function removeStudent(index) {
@@ -214,7 +214,7 @@ function submitStudentInfo(obj) {
             updateTableRow(responseObj);
         }
     }
-    request.open('POST','../php/students/student_teacherUpdate.php',true);
+    request.open('POST','http://localhost:3001/php/students/student_teacherUpdate.php',true);
     request.send(jsondata);
 }
 

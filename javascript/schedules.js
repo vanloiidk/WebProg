@@ -18,7 +18,7 @@ function setSubjetColor() {
 
             }
         }
-        request.open('GET','../php/subject/subject_read.php');
+        request.open('GET','http://localhost:3001/php/subject/subject_read.php');
         request.send()
 
 }
@@ -101,7 +101,7 @@ function getSchedule() {
         }
     }
     let class_id = getCookie("class_id");
-    request.open('GET',`../php/schedule/schedule_readWithClass.php?class_id=${class_id}`,true);
+    request.open('GET',`http://localhost:3001/php/schedule/schedule_readWithClass.php?class_id=${class_id}`,true);
     request.send();
 }
 
@@ -269,7 +269,7 @@ function getSubjects(selected) {
 
         }
     }
-    request.open('GET','../php/subject/subject_read.php');
+    request.open('GET','http://localhost:3001/php/subject/subject_read.php');
     request.send()
 }
 
@@ -329,7 +329,7 @@ function submitModal(obj) {
         }
     }
 
-    request.open('POST','../php/schedule/schedule_update.php',true);
+    request.open('POST','http://localhost:3001/php/schedule/schedule_update.php',true);
     request.send(jsondata);
 
 }
@@ -354,7 +354,7 @@ function delSchedule() {
         }
     }
 
-    request.open('GET',`../php/schedule/schedule_deleteOne.php?schedule_id=${schedule_id}`);
+    request.open('GET',`http://localhost:3001/php/schedule/schedule_deleteOne.php?schedule_id=${schedule_id}`);
     request.send();
 }
 
@@ -434,7 +434,7 @@ function getAddSubjects() {
 
         }
     }
-    request.open('GET','../php/subject/subject_read.php');
+    request.open('GET','http://localhost:3001/php/subject/subject_read.php');
     request.send()
 }
 
@@ -471,7 +471,7 @@ function createSchedule() {
         }
     }
 
-    request.open('POST','../php/schedule/schedule_create.php',true);
+    request.open('POST','http://localhost:3001/php/schedule/schedule_create.php',true);
     request.send(jsondata);
 }
 function changeCellInfo(obj) {
@@ -497,7 +497,7 @@ function getNewScheduleId(){
         }
     }
 
-    request.open('GET','../php/schedule/schedule_getNewID.php',true)
+    request.open('GET','http://localhost:3001/php/schedule/schedule_getNewID.php',true)
     request.send();
 }
 

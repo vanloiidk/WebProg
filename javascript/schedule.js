@@ -170,7 +170,7 @@ function getData() {
         }
     }
 
-    request.open("GET",`../php/schedule/schedule_readWithClass.php?class_id=${class_id}`,true);
+    request.open("GET",`http://localhost:3001/php/schedule/schedule_readWithClass.php?class_id=${class_id}`,true);
     request.send();
 }
 function getCookie(cname) {
@@ -210,7 +210,7 @@ function deleteStudent(schedule_id,indexRow) {
             removeStudent(indexRow);
         }
     }
-    request.open("GET",`../php/schedule/schedule_removeOneFromClass.php?schedule_id=${schedule_id}`);
+    request.open("GET",`http://localhost:3001/php/schedule/schedule_removeOneFromClass.php?schedule_id=${schedule_id}`);
     request.send();
 }
 function removeStudent(index) {
@@ -250,7 +250,7 @@ function getSubjects(rowIndex) {
         }
     }
 
-    request.open('GET',`../php/subject/subject_read.php?`);
+    request.open('GET',`http://localhost:3001/php/subject/subject_read.php?`);
     request.send();
 }
 
@@ -277,7 +277,7 @@ function getWeekdays(rowIndex) {
         }
     }
     let day_id = "";
-    request.open('GET',`../php/day/day_read.php?`);
+    request.open('GET',`http://localhost:3001/php/day/day_read.php?`);
     request.send();
 }
 
@@ -299,7 +299,7 @@ function getSections(rowIndex) {
         }
     }
     let time_id = "";
-    request.open('GET',`../php/time/time_read.php?`);
+    request.open('GET',`http://localhost:3001/php/time/time_read.php?`);
     request.send();
 }
 
@@ -404,7 +404,7 @@ function submitModal(jsondata) {
         }
     }
 
-    request.open('POST','../php/schedule/schedule_update.php',true);
+    request.open('POST','http://localhost:3001/php/schedule/schedule_update.php',true);
     request.send(jsondata);
 
 }

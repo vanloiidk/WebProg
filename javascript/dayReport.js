@@ -56,7 +56,7 @@ function getChartData() {
         }
     }
 
-    request.open('POST',`../php/attendance/chartReport.php`);
+    request.open('POST',`http://localhost:3001/php/attendance/chartReport.php`);
     request.send(jsondata);
 }
 
@@ -70,6 +70,6 @@ function getTotalStudent(){
     }
   }
 
-  request.open('GET',`../../php/students/student_countWithClass.php?class_id=${class_id}`,true);
+  request.open('GET',`http://localhost:3001/php/students/student_countWithClass.php?class_id=${class_id}`,true);
   request.send();
 }

@@ -44,7 +44,7 @@ function init() {
 
         }
     };
-    request.open('GET',`../php/classes/class_readOne.php?class_id=${class_id}`,true);
+    request.open('GET',`http://localhost:3001/php/classes/class_readOne.php?class_id=${class_id}`,true);
     request.send();
 }
 function calcAttendance() {
@@ -64,7 +64,7 @@ function getSemester() {
 
         }
     }
-    request.open('GET','../php/semester/semester_read.php',true);
+    request.open('GET','http://localhost:3001/php/semester/semester_read.php',true);
     request.send();
 }
 
@@ -81,7 +81,7 @@ function getBranch() {
 
         }
     }
-    request.open('GET','../php/branch/branch_read.php',true);
+    request.open('GET','http://localhost:3001/php/branch/branch_read.php',true);
     request.send();
 }
 function addOption(name, mysel) {
@@ -121,6 +121,6 @@ function postNewData(jsonData,class_id) {
         }
 
     }
-    request.open("POST", `../php/classes/class_update.php?class_id=${class_id}`, true);
+    request.open("POST", `http://localhost:3001/php/classes/class_update.php?class_id=${class_id}`, true);
     request.send(jsonData);
 }

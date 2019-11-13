@@ -12,7 +12,7 @@ function getMaincontent() {
             maincontent.setAttribute("src", "addNewStudent.html")
             break
         case "create-new-student":
-            maincontent.setAttribute("src","../attendance-project/register/index.html")
+            maincontent.setAttribute("src","http://localhost:3001/attendance-project/register/index.html")
             break
         case "edit-student":
             maincontent.setAttribute("src","editStudents.html")
@@ -24,7 +24,7 @@ function getMaincontent() {
             maincontent.setAttribute("src","editSchedule.html")
             break
         case "dashboard":
-            maincontent.setAttribute("src","../attendance-project/dashboard/index.html")
+            maincontent.setAttribute("src","http://localhost:3001/attendance-project/dashboard/index.html")
 
     }
 }
